@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucesión de Fibonacci</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Vincular archivo CSS -->
+</head>
+<body>
+    <header>
+        <h1>Generador de la Sucesión de Fibonacci</h1>
+    </header>
+    <main>
+        <form id="fibonacci-form">
+            <label for="number-input">Ingrese un número:</label>
+            <!-- Agregar un párrafo para separar la frase del campo de entrada -->
+            <p></p>
+            <!-- Establecer el valor por defecto como "20" -->
+            <input type="number" id="number-input" name="number" value="20" required>
+            <!-- Agregar un botón para calcular la sucesión de Fibonacci -->
+            <button type="button" id="calcular-button">Generar</button>
+        </form>
+        <div id="fibonacci-sequence"></div>
+        <!-- Contenedor para la imagen a la izquierda -->
+        <div class="image-container">
+            <img src="images/piramide.png" alt="Pirámide">
+            <img src="images/sucesion.webp" alt="Sucesión">
+        </div>
+
+        <div id="fibonacci-sequence"></div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
+

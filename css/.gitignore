@@ -1,0 +1,18 @@
+# Archivos y directorios generados automáticamente
+node_modules/
+dist/
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Archivos de configuración específicos de tu entorno de desarrollo
+.vscode/
+.idea/
+
+# Archivos compilados o generados
+*.css.map
+*.js.map
+
+# Cualquier otro archivo específico que desees ignorar

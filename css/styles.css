@@ -1,0 +1,71 @@
+/* Estilo para alinear el valor de n a la derecha */
+#number-input {
+    text-align: right;
+    width: 100px; /* Ancho menor para la caja del formulario */
+}
+
+/* Estilo para el fondo de la página */
+body {
+    background-color: #BFCCDD; /* Color de fondo #f0f0f0 */
+}
+
+/* Estilo para el encabezado */
+h1 {
+    color: #0000FF; /* Color del texto */
+}
+
+
+/* Estilo para las listas numeradas */
+ol {
+    list-style-type: none; /* Ocultar el marcador de lista predeterminado */
+    counter-reset: my-counter; /* Reiniciar el contador */
+}
+
+ol li {
+    position: relative; /* Establecer posición relativa para que se pueda posicionar el pseudo-elemento */
+    padding-left: 20px; /* Espacio a la izquierda del texto */
+}
+
+ol li:before {
+    content: counter(my-counter) " → "; /* Mostrar el número seguido de la flecha */
+    position: absolute; /* Posicionar de manera absoluta */
+    left: -20px; /* Posicionar a la izquierda */
+    counter-increment: my-counter; /* Incrementar el contador */
+}
+
+
+
+
+
+/* Estilo para el formulario */
+form {
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilo para el contenedor principal */
+main {
+    display: flex; /* Hacer que los elementos hijos se comporten como elementos flexibles */
+    flex-direction: column; /* Apilar los elementos hijos verticalmente */
+    align-items: flex-start; /* Alinear los elementos hijos a la izquierda */
+}
+
+/* Estilo para el formulario */
+form {
+    align-self: flex-start; /* Alinear el formulario a la izquierda dentro del contenedor principal */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilo para el contenedor de las imágenes */
+.image-container {
+    display: flex; /* Hacer que los elementos hijos se comporten como elementos flexibles */
+    align-items: flex-start; /* Alinear las imágenes a la izquierda dentro del contenedor */
+    max-width: 45%;
+}
+
+/* Estilo para las imágenes */
+img {
+    width: 50%; /* Ancho del 45% para cada imagen */
+    height: auto; /* Altura automática */
+    margin-right: 10px; /* Margen derecho */
+}
+
